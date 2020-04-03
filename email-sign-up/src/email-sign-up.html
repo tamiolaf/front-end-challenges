@@ -12,35 +12,35 @@
         <form onsubmit="onSubmit(event)">
           <label for="email">Email Address</label>
           <br/>
-          <div style="display:flex;align-items:center">
+          <div class="input-wrapper" >
             <input id="email" name="email">
-            <button style="background-color:#f9d170" type="submit" >
-              <img src="../assets/svg/arrow-right.svg" height="22px" width="20px" color:"#4c2982"/>
+            <button type="submit" >
+              <img src="../assets/svg/arrow-right.svg" class="button-svg" />
             </button>
         </div>
         </form>
       </div>
       </br>
-      <div style="justify-content:center;align-items:center;">
+      <div class="response-wrapper">
         <div class="success hide">
-          <div>
-            <img src="../assets/svg/check.svg" height="20px" width="20px"/>
-          </div>
-          <div>
-            <span style="font-weight:bold">Yay! Thank you</span> 
-            <span>We've sent a confirmation link to your inbox</span>
+          <div class="response-inner">
+            <img src="../assets/svg/check.svg" class="response-svg"/>
+            <div class="response-text-wrapper">
+              <span class="response-text-main"> Yay! Thank You </span>
+              <span class="response-text-detail">We've sent a confirmation link to your inbox</span>
+            </div>
           </div>
         </div>
-        <div class="error" >
-          <div style="display:flex;align-content:baseline;">
-            <img src="../assets/svg/alert-triangle.svg" height="20px" width="20px"/>
-            <span style="font-weight:bold">Please use a valid email</span>
-          <!--  <span>Like: person@inbox.com</span> -->
+        <div class="error hide" >
+          <div class="response-inner">
+            <img src="../assets/svg/alert-triangle.svg" class="response-svg"/>
+            <div class="response-text-wrapper">
+              <span class="response-text-main">Please use a valid email</span>
+              <span class="response-text-detail">Like: person@inbox.com</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </body>
-
- 
 </html>
